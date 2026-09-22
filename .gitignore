@@ -1,21 +1,27 @@
-# Dependencies
+# ==============================
+# Node.js & React (Frontend & Backend)
+# ==============================
 node_modules/
 jspm_packages/
 vendor/
 
-# Production / Build Output
+# Build Output
 dist/
+dist-ssr/
 build/
 out/
 .next/
 nuxt/
 
-# Environment and Secrets
+# Environment Variables
 .env
 .env.local
 .env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Logs and Runtime Data
+# Logs
 logs/
 *.log
 npm-debug.log*
@@ -24,7 +30,78 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Operating System Files
+# Tooling and Caches
+.eslintcache
+.stylelintcache
+.prettiercache
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# ==============================
+# Python (Backend-python)
+# ==============================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing & Coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# ==============================
+# Databases (Prisma / Local)
+# ==============================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# ==============================
+# OS & Editor Settings
+# ==============================
 .DS_Store
 .DS_Store?
 ._*
@@ -33,7 +110,6 @@ lerna-debug.log*
 ehthumbs.db
 Thumbs.db
 
-# IDE and Editor Files
 .idea/
 .vscode/*
 !.vscode/extensions.json
@@ -43,7 +119,5 @@ Thumbs.db
 .project
 .classpath
 .settings/
-
-# Testing and Coverage
-coverage/
-.nyc_output/
+*.swp
+*.swo
